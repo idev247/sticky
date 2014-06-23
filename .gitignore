@@ -12,3 +12,6 @@ Thumbs.db
 
 # Thumbnails
 ._*
+
+# Gruntfile
+.tmp
