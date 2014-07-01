@@ -1,7 +1,4 @@
 'use strict';
-var mountFolder = function (connect, dir) {
-  return connect.static(require('path').resolve(dir));
-};
 
 module.exports = function (grunt) {
   require('time-grunt')(grunt);
@@ -14,14 +11,6 @@ module.exports = function (grunt) {
         hostname: 'localhost'
       },
       test: {
-        options: {
-          middleware: function (connect) {
-            return [
-            mountFolder(connect, '.tmp'),
-            mountFolder(connect, 'test')
-            ];
-          }
-        }
       }
     },
     mocha: {
