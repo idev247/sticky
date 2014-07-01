@@ -1,1 +1,14 @@
+# Bower
 bower_components
+
+# OSX
+.DS_Store
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+
+# Thumbnails
+._*
